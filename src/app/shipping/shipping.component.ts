@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { CartService } from '../cart.service';
 
 @Component({
@@ -8,8 +7,10 @@ import { CartService } from '../cart.service';
   styleUrls: ['./shipping.component.css']
 })
 export class ShippingComponent {
-
   shippingCosts = this.cartService.getShippingPrices();
 
-  constructor(private cartService: CartService) { }
+  constructor(
+    private cartService: CartService
+    ) { }
+
 }
