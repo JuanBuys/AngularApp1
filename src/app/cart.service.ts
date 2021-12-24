@@ -4,6 +4,7 @@ import { Product } from './products';
 
 export class CartService {
   items: Product[] = [];
+  shippingCosts : undefined;
 
   constructor(
     private http: HttpClient
