@@ -35,7 +35,6 @@ import { CartService } from './cart.service';
     CartComponent,
     ShippingComponent
   ],
-  providers: [CartService],
   bootstrap: [
     AppComponent
   ]
